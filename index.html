@@ -40,7 +40,7 @@
               id="nav-logo"
             />
           </div>
-          <div id="nav-search">Nav Items</div>
+          <div id="nav-search"></div>
           <button id="nav-cart" class="nav-button">
             <i id="cart-icon" class="fas fa-shopping-cart fa-2x"></i>
           </button>
@@ -86,7 +86,7 @@
           </div>
           <div class="divider"></div>
           <div class="product-variant product-info-category">
-            <p>Colour</p>
+            <p>Colour: <span id="color-variant">Khaki</span></p>
             <div class="variant-list">
               <button
                 class="variant-option active"
@@ -110,13 +110,18 @@
           </div>
           <div class="divider"></div>
           <div id="product-size" class="product-info-category">
-            <p>Size</p>
+            <div style="display: flex; align-items: baseline">
+              <p>Size</p>
+              <button class="size-guide-button" onclick="openSizeGuideModal()">
+                Size Guide
+              </button>
+            </div>
             <div id="product-size-list"></div>
           </div>
           <div class="divider"></div>
           <div class="product-description">
             <p>
-              Add sporty flare to your casual style, th lace-up shoe is crafted
+              Add sporty flare to your casual style, the lace-up shoe is crafted
               in luxury leather and poised on an extra lightweight and flexible
               sole aiding your movement. Decorated with delicate brogue punching
               and unlined for supple comfort, the cushioned leather insole can
@@ -154,21 +159,136 @@
             </table>
           </div>
           <div class="divider"></div>
+          <div class="product-info-category">
+            <div>
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+              />
+
+              <img
+                width="50"
+                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+              />
+            </div>
+          </div>
           <div id="product-checkout" class="product-info-category">
             <button class="buy-now-button">Buy Now</button>
             <button class="add-to-cart-button">Add To Cart</button>
           </div>
-          <div class="next-day-delivery-info">
-            <p>
-              <span><i class="fas fa-truck"></i></span> Order in the next 18
-              hours, 46 minutes and 44 seconds and receive your order on
-              Wednesday when you select express delivery for £4.99!
-            </p>
+          <div class="product-info-category">
+            <div class="shipping-promotions">
+              <p>
+                <span class="shipping-promotions-checkbox"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                Free Delivery to Store
+              </p>
+              <p>
+                <span class="shipping-promotions-checkbox"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                £2.99 Standard UK Shipping
+              </p>
+              <p>
+                <span class="shipping-promotions-checkbox"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                Next Day Express Delivery £4.99
+              </p>
+              <p>
+                <span class="shipping-promotions-checkbox"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                DPD Express Next Day Tracked Delivery
+              </p>
+            </div>
+            <div class="next-day-delivery-info">
+              <p>
+                <span><i class="fas fa-truck"></i></span> Order in the next
+                <strong>18 hours, 46 minutes and 44 seconds</strong> and receive
+                your order on Wednesday when you select express delivery for
+                £4.99!
+              </p>
+            </div>
+            <div class="shipping-return-box">
+              <a href="#">View Delivery Information</a>
+              <br />
+              <a href="#">View Returns Policy</a>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="product-share product-info-category">
+            <p>Share It</p>
+            <button class="share-button facebook" onclick="goToLink()">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </button>
+            <input
+              type="text"
+              id="share-url"
+              value="https://www.pavers.co.uk/products/wide-fit-leather-lace-up-trainers-simin31003b-317-969?variant=39663414771797"
+              hidden
+            />
+            <div class="tooltip">
+              <button
+                class="share-button link"
+                onclick="copyToClipboard()"
+                onmouseout="resetTooltip()"
+              >
+                <span class="tooltiptext" id="link-tooltip"
+                  >Copy to Clipboard</span
+                >
+                <i class="fas fa-link fa-2x"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+      <div class="divider"></div>
       <section id="lightweight-soles">
-        <div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
           <div class="desc-image-wrapper">
             <img src="images/brk33001_navy-1.jpg" alt="" />
           </div>
@@ -185,30 +305,126 @@
           <a href="#"> View more Women's Lightweight styles › </a>
         </div>
       </section>
-      <section>
-        <div>
-          <button class="accordion">Shipping & Returns</button>
-          <div class="panel">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-
-          <button class="accordion">Section 3</button>
-          <div class="panel">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-category">
+          <h3>Pavers Shoes</h3>
+          <div class="footer-category-links">
+            <a href="#">Women's Boots</a>
+            <a href="#">Women's Shoes</a>
+            <a href="#">Women's Trainers</a>
+            <a href="#">Women's Slippers</a>
+            <a href="#">Women's Wide Fit</a>
+            <a href="#">Women's Sandals</a>
+            <a href="#">Men's Boots</a>
+            <a href="#">Men's Shoes</a>
+            <a href="#">Men's Trainers</a>
+            <a href="#">Men's Slippers</a>
+            <a href="#">Men's Wide Fit</a>
+            <a href="#">Men's Sandals</a>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="footer-category">
+          <h3>Helpful Links</h3>
+          <div class="footer-category-links">
+            <a href="#">Pavers Foundation</a>
+            <a href="#">Search</a>
+            <a href="#">Tips & Inspiration</a>
+            <a href="#">Pavers TV</a>
+            <a href="#">Customer Services</a>
+            <a href="#">Careers</a>
+            <a href="#">Request a Catalogue</a>
+            <a href="#">Press</a>
+            <a href="#">Blue Light Discount</a>
+          </div>
+        </div>
+        <div class="footer-category">
+          <h3>Get In Touch</h3>
+          <p>
+            <strong>Pavers LTD</strong> Catherine House Northminster Business
+            Park YORK YO26 6QU
+          </p>
+          <p><strong>Customer Services:</strong> 0344 844 0809</p>
+          <p><strong>24 Hr Order Line:</strong> 0344 844 0203</p>
+          <p>
+            Calls cost 9p per minute plus your phone company's access charge
+          </p>
+          <p>
+            <strong>Email:</strong
+            ><a href="mailto:helpdesk@pavers.co.uk">helpdesk@pavers.co.uk</a>
+          </p>
+        </div>
+        <div class="footer-category">
+          <h3>Sign Up for our Newsletter</h3>
+          <input
+            type="text"
+            placeholder="Enter your email address to subscribe"
+          />
+          <button class="subscribe-button">Subscribe</button>
+        </div>
+      </div>
+      <div class="divider" style="margin: 1rem 0"></div>
+      <div class="lower-footer">
+        <div class="left">
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+          />
+
+          <img
+            width="50"
+            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+          />
+        </div>
+        <div class="right">
+          <p>
+            © 2022 Pavers LTD. Company Registration Number 1014213. VAT
+            Registration: GB170 0301 26
+          </p>
+        </div>
+      </div>
+    </footer>
     <button id="scroll-top" onclick="goToTop()">
       <i class="fas fa-angle-up"></i>
     </button>
@@ -220,6 +436,6 @@
     <script src="library/owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="library/zoom-master/jquery.zoom.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/accordion.js"></script>
+    <script src="./js/copylink.js"></script>
   </body>
 </html>

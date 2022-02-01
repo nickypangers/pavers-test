@@ -170,6 +170,7 @@ function setVariantOptionActive(element) {
     el.classList = "variant-option";
   });
   selectedVariant = element.dataset.value;
+  document.getElementById("color-variant").innerHTML = element.dataset.value;
   element.classList.add("active");
 }
 
