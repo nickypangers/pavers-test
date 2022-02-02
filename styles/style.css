@@ -90,7 +90,43 @@ footer {
   cursor: pointer;
 }
 
-#nav-cart {
+.nav-items {
+  flex-grow: 3;
+}
+
+.nav-items > a,
+.nav-items > a:visited {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.nav-items > a.sale,
+a.sale:visited {
+  color: red;
+}
+
+.nav-items > a:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right > button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-right > button:hover {
+  color: lightblue;
+}
+
+.nav-cart {
   display: block;
 }
 
@@ -567,11 +603,11 @@ tr:nth-child(even) {
     height: 100%;
   }
 
-  #nav-search {
+  .nav-items {
     display: none;
   }
 
-  #nav-cart {
+  .nav-cart {
     display: none;
   }
 
