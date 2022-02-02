@@ -575,6 +575,33 @@ tr:nth-child(even) {
   color: var(--gray);
 }
 
+#popular-items {
+  text-align: center;
+}
+
+.popular-items-content {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.popular-item-product {
+  font-size: 0.8rem;
+}
+
+.popular-item-product > p {
+  margin-bottom: 0.2rem;
+}
+
+.popular-item-product > .image-wrapper {
+  width: 100%;
+}
+
+.popular-item-product > .image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   footer {
     padding-top: 1rem;
@@ -689,5 +716,10 @@ tr:nth-child(even) {
 
   .lower-footer > .right {
     order: 1;
+  }
+
+  .popular-items-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
