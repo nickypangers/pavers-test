@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link
       rel="stylesheet"
       href="library/owlcarousel/dist/assets/owl.carousel.min.css"
@@ -124,7 +125,7 @@
           <div id="product-size" class="product-info-category">
             <div style="display: flex; align-items: baseline">
               <p>Size</p>
-              <button class="size-guide-button" onclick="openSizeGuideModal()">
+              <button class="size-guide-button" onclick="openModal()">
                 Size Guide
               </button>
             </div>
@@ -175,52 +176,52 @@
             <div>
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
               />
 
               <img
                 width="50"
-                src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
               />
             </div>
           </div>
@@ -381,52 +382,52 @@
         <div class="left">
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/discover-cc9808e50193c7496e7a5245eb86d5e06f02e2476c0fe70f2c40016707d35461.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
           />
 
           <img
             width="50"
-            src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+            src="http://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
           />
         </div>
         <div class="right">
@@ -437,6 +438,162 @@
         </div>
       </div>
     </footer>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Size Guide</h3>
+          <button onclick="closeModal()"><i class="fas fa-times fa-2x"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="pp-panel">
+            <div class="pp-content">
+<p>Shoes displayed on Pavers.co.uk are listed in British or European sizes. To convert them to your local sizes please use the chart below. These conversions are for guidance only and may vary by manufacturer.</p>
+<div id="womensSizes">
+<table class="size-guide-table" style="width: 100%;" border="0" cellspacing="0" cellpadding="7">
+<tbody>
+<tr>
+<td class="head">UK Size</td>
+<td class="head">European</td>
+<td class="head">US Size</td>
+<td class="head">Japanese</td>
+<td class="head">&nbsp;Shop your size</td>
+</tr>
+<tr>
+<td>2</td>
+<td>35</td>
+<td>4</td>
+<td>21</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-2" title="Women's Shoes UK Size 2">Shop UK Size 2 &gt;</a></td>
+</tr>
+<tr>
+<td class="even">2.5</td>
+<td class="even">35.5</td>
+<td class="even">4.5</td>
+<td class="even">21.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-2-5" title="Women's Shoes UK Size 2.5"><span>Shop UK Size 2.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>36</td>
+<td>5</td>
+<td>22</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-3" title="Women's Shoes UK Size 3"><span>Shop UK Size 3 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">3.5</td>
+<td class="even">36.5</td>
+<td class="even">5.5</td>
+<td class="even">22.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-3-5" title="Women's Shoes UK Size 3.5"><span>Shop UK Size 3.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>37</td>
+<td>6</td>
+<td>23</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-4" title="Women's Shoes UK Size 4"><span>Shop UK Size 4 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">4.5</td>
+<td class="even">37.5</td>
+<td class="even">6.5</td>
+<td class="even">23.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-4-5" title="Women's Shoes UK Size 4.5"><span>Shop UK Size 4.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>38</td>
+<td>7</td>
+<td>24</td>
+<td><a href="https://www.pavers.co.uk/collections/size-5-womens-shoes" title="Women's Shoes UK Size 5"><span>Shop UK Size 5 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">5.5</td>
+<td class="even">38.5</td>
+<td class="even">7.5</td>
+<td class="even">24.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-5-5" title="Women's Shoes UK Size 5.5"><span>Shop UK Size 5.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>39</td>
+<td>8</td>
+<td>25</td>
+<td><a href="https://www.pavers.co.uk/collections/size-6-womens-shoes" title="Women's Shoes UK Size 6"><span>Shop UK Size 6 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">6.5</td>
+<td class="even">39.5</td>
+<td class="even">8.5</td>
+<td class="even">25.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-6-5" title="Women's Shoes UK Size 6.5"><span>Shop UK Size 6.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>40</td>
+<td>9</td>
+<td>26</td>
+<td><a href="https://www.pavers.co.uk/collections/size-7-womens-shoes" title="Women's Shoes UK Size 7"><span>Shop UK Size 7 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">7.5</td>
+<td class="even">40.5</td>
+<td class="even">9.5</td>
+<td class="even">26.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-7-5" title="Women's Shoes UK Size 7.5"><span>Shop UK Size 7.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>41</td>
+<td>10</td>
+<td>27</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-8" title="Women's Shoes UK Size 8"><span>Shop UK Size 8 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">8.5</td>
+<td class="even">41.5</td>
+<td class="even">10.5</td>
+<td class="even">27.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-8-5" title="Women's Shoes UK Size 8.5"><span>Shop UK Size 8.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>42</td>
+<td>11</td>
+<td>28</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-9" title="Women's Shoes UK Size 9"><span>Shop UK Size 9 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">9.5</td>
+<td class="even">42.5</td>
+<td class="even">11.5</td>
+<td class="even">28.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-9-5" title="Women's Shoes UK Size 9.5"><span>Shop UK Size 9.5 &gt;</span></a></td>
+</tr>
+<tr>
+<td>&nbsp;10</td>
+<td>43</td>
+<td>12</td>
+<td>29</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-10" title="Women's Shoes UK Size 10"><span>Shop UK Size 10 &gt;</span></a></td>
+</tr>
+<tr>
+<td class="even">&nbsp;10.5</td>
+<td class="even">43.5</td>
+<td class="even">12.5</td>
+<td class="even">29.5</td>
+<td><a href="https://www.pavers.co.uk/collections/womens/size-10-5" title="Women's Shoes UK Size 10.5"><span>Shop UK Size 10.5 &gt;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+              
+              
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
     <button id="scroll-top" onclick="goToTop()">
       <i class="fas fa-angle-up"></i>
     </button>

@@ -181,3 +181,13 @@ function setSizeOptionActive(element) {
   selectedSize = element.dataset.value;
   element.classList.add("active");
 }
+
+function openModal() {
+  $('body').css("overflow", "hidden")
+    $('#modal').css('display', 'block');
+}
+
+function closeModal() {
+  $('body').css("overflow", "auto")
+    $('#modal').css('display', 'none');
+}
